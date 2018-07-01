@@ -20,6 +20,7 @@ namespace FileCorruptor
         FileCorruptorProgram FileCorruptorProgram;
         HexBoxManager HexBoxManager;
         string selectedFileIdentifier;
+        string selectedPassIdentifier;
  
         public Form1()
         {
@@ -54,6 +55,26 @@ namespace FileCorruptor
             }
         }
 
+      
+
+        private void UpdatePassesListBox()
+        {
+            lb_passes.Items.Clear();
+
+            var passes = FileCorruptorProgram.Corruptor.CorruptorPasses;
+            foreach (KeyValuePair<string, CorruptorPass> pass in passes)
+            {
+                string identifier = pass.Key;
+                CorruptorPass file = pass.Value;
+                lb_passes.Items.Add(identifier);
+            }
+
+            if (selectedPassIdentifier == null && lb_passes.Items.Count > 0)
+            {
+                lb_passes.SelectedIndex = 0;
+            }
+        }
+
         private void UpdateSelectedFileInfo()
         {
             LoadedFile file = FileCorruptorProgram.SelectFile(selectedFileIdentifier);
@@ -61,9 +82,24 @@ namespace FileCorruptor
             {
                 tb_file_identifier.Text = selectedFileIdentifier;
                 cb_protectFromOverwrite.Checked = file.ReadOnly;
-                lbl_file_bytes.Text = file.BinaryContent.Length.ToString() ;
+                lbl_file_bytes.Text = file.BinaryContent.Length.ToString();
                 lbl_selected_file_path.Text = file.FilePath;
                 lbl_hash.Text = file.GetSHA1();
+            }
+        }
+
+        private void UpdateSelectedPassInfo()
+        {
+            CorruptorPass selectedPass = FileCorruptorProgram.Corruptor.CorruptorPasses[selectedPassIdentifier];
+            if (selectedPass != null)
+            {
+                tb_pass_identifier.Text = selectedPass.Identifier;
+                tb_pass_interval.Text = selectedPass.Interval.ToString();
+                tb_pass_chunk_size.Text = selectedPass.ChunkSize.ToString();
+                tb_pass_start_address.Text = selectedPass.StartAddress.ToString();
+                tb_pass_end_address.Text = selectedPass.EndAddress.ToString();
+                tb_pass_writevalue_max.Text = selectedPass.WriteValueMax.ToString();
+                tb_pass_writevalue_min.Text = selectedPass.WriteValueMin.ToString();
             }
         }
 
@@ -93,6 +129,16 @@ namespace FileCorruptor
                 selectedFileIdentifier = lb_targetFiles.SelectedItem.ToString();
                 UpdateSelectedFileInfo();
             }
+        }
+
+        private void lb_passes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lb_passes.SelectedItem != null)
+            {
+                selectedPassIdentifier = lb_passes.SelectedItem.ToString();
+                UpdateSelectedPassInfo();
+            }
+            
         }
 
         private void btn_file_create_copy_Click(object sender, EventArgs e)
@@ -147,5 +193,26 @@ namespace FileCorruptor
             lbl_source_hexbox.Text = selectedFileIdentifier;
             UpdateSelectedFileInfo();
         }
+
+        private void btn_create_new_pass_Click(object sender, EventArgs e)
+        {
+            CorruptorPass corruptorPass = new CorruptorPass()
+            {
+                Identifier = tb_pass_identifier.Text,
+                Interval = Convert.ToInt32(tb_pass_interval.Text),
+                ChunkSize = Convert.ToInt32(tb_pass_chunk_size.Text),
+                StartAddress = Convert.ToInt32(tb_pass_start_address.Text),
+                EndAddress = Convert.ToInt32(tb_pass_end_address.Text),
+                WriteValueMin = Convert.ToByte(tb_pass_writevalue_min.Text),
+                WriteValueMax = Convert.ToByte(tb_pass_writevalue_max.Text)
+            };
+
+            FileCorruptorProgram.Corruptor.CorruptorPasses.Add(corruptorPass.Identifier,corruptorPass);
+            selectedPassIdentifier = corruptorPass.Identifier;
+            UpdatePassesListBox();
+            UpdateSelectedPassInfo();
+        }
+
+       
     }
 }

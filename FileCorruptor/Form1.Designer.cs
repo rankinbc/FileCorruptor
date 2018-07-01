@@ -37,8 +37,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menu_import_file = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_export_file = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_exit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menu_exit = new System.Windows.Forms.ToolStripMenuItem();
             this.cb_protectFromOverwrite = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_file_bytes = new System.Windows.Forms.Label();
@@ -50,40 +50,40 @@
             this.tb_goto = new System.Windows.Forms.TextBox();
             this.lb_targetFiles = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_file_identifier = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbl_selected_file_path = new System.Windows.Forms.Label();
-            this.btn_file_create_copy = new System.Windows.Forms.Button();
-            this.btn_set_source_file = new System.Windows.Forms.Button();
-            this.btn_set_target_file = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btn_save_file = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lbl_hash = new System.Windows.Forms.Label();
             this.btn_delete = new System.Windows.Forms.Button();
+            this.lbl_hash = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btn_save_file = new System.Windows.Forms.Button();
+            this.btn_set_target_file = new System.Windows.Forms.Button();
+            this.btn_set_source_file = new System.Windows.Forms.Button();
+            this.btn_file_create_copy = new System.Windows.Forms.Button();
+            this.lbl_selected_file_path = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_file_identifier = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tb_pass_writevalue_max = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tb_pass_writevalue_min = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tb_pass_identifier = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tb_pass_chunk_size = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_pass_interval = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_pass_end_address = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btn_randomize_pass = new System.Windows.Forms.Button();
+            this.btn_create_new_pass = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_pass_start_address = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lb_passes = new System.Windows.Forms.ListBox();
             this.btn_save_changes = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.btn_write_to_file = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,43 +126,43 @@
             // menu_save_project
             // 
             this.menu_save_project.Name = "menu_save_project";
-            this.menu_save_project.Size = new System.Drawing.Size(152, 22);
+            this.menu_save_project.Size = new System.Drawing.Size(140, 22);
             this.menu_save_project.Text = "Save Project";
             // 
             // menu_load_project
             // 
             this.menu_load_project.Name = "menu_load_project";
-            this.menu_load_project.Size = new System.Drawing.Size(152, 22);
+            this.menu_load_project.Size = new System.Drawing.Size(140, 22);
             this.menu_load_project.Text = "Load Project";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
             // 
             // menu_import_file
             // 
             this.menu_import_file.Name = "menu_import_file";
-            this.menu_import_file.Size = new System.Drawing.Size(152, 22);
+            this.menu_import_file.Size = new System.Drawing.Size(140, 22);
             this.menu_import_file.Text = "Import File";
             this.menu_import_file.Click += new System.EventHandler(this.menu_import_file_Click);
             // 
             // menu_export_file
             // 
             this.menu_export_file.Name = "menu_export_file";
-            this.menu_export_file.Size = new System.Drawing.Size(152, 22);
+            this.menu_export_file.Size = new System.Drawing.Size(140, 22);
             this.menu_export_file.Text = "Export File";
-            // 
-            // menu_exit
-            // 
-            this.menu_exit.Name = "menu_exit";
-            this.menu_exit.Size = new System.Drawing.Size(152, 22);
-            this.menu_exit.Text = "Exit";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
+            // 
+            // menu_exit
+            // 
+            this.menu_exit.Name = "menu_exit";
+            this.menu_exit.Size = new System.Drawing.Size(140, 22);
+            this.menu_exit.Text = "Exit";
             // 
             // cb_protectFromOverwrite
             // 
@@ -282,49 +282,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "File";
             // 
-            // tb_file_identifier
+            // btn_delete
             // 
-            this.tb_file_identifier.Location = new System.Drawing.Point(55, 12);
-            this.tb_file_identifier.Name = "tb_file_identifier";
-            this.tb_file_identifier.Size = new System.Drawing.Size(100, 20);
-            this.tb_file_identifier.TabIndex = 13;
+            this.btn_delete.Location = new System.Drawing.Point(229, 86);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(78, 23);
+            this.btn_delete.TabIndex = 21;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lbl_hash
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Path:";
+            this.lbl_hash.AutoSize = true;
+            this.lbl_hash.Location = new System.Drawing.Point(33, 82);
+            this.lbl_hash.Name = "lbl_hash";
+            this.lbl_hash.Size = new System.Drawing.Size(0, 13);
+            this.lbl_hash.TabIndex = 20;
             // 
-            // lbl_selected_file_path
+            // label10
             // 
-            this.lbl_selected_file_path.AutoSize = true;
-            this.lbl_selected_file_path.Location = new System.Drawing.Point(33, 35);
-            this.lbl_selected_file_path.Name = "lbl_selected_file_path";
-            this.lbl_selected_file_path.Size = new System.Drawing.Size(0, 13);
-            this.lbl_selected_file_path.TabIndex = 15;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Hash:";
             // 
-            // btn_file_create_copy
+            // btn_save_file
             // 
-            this.btn_file_create_copy.Location = new System.Drawing.Point(229, 42);
-            this.btn_file_create_copy.Name = "btn_file_create_copy";
-            this.btn_file_create_copy.Size = new System.Drawing.Size(78, 23);
-            this.btn_file_create_copy.TabIndex = 13;
-            this.btn_file_create_copy.Text = "Create Copy";
-            this.btn_file_create_copy.UseVisualStyleBackColor = true;
-            this.btn_file_create_copy.Click += new System.EventHandler(this.btn_file_create_copy_Click);
-            // 
-            // btn_set_source_file
-            // 
-            this.btn_set_source_file.Location = new System.Drawing.Point(202, 111);
-            this.btn_set_source_file.Name = "btn_set_source_file";
-            this.btn_set_source_file.Size = new System.Drawing.Size(105, 23);
-            this.btn_set_source_file.TabIndex = 16;
-            this.btn_set_source_file.Text = "Set As Source File";
-            this.btn_set_source_file.UseVisualStyleBackColor = true;
-            this.btn_set_source_file.Click += new System.EventHandler(this.btn_set_source_file_Click);
+            this.btn_save_file.Location = new System.Drawing.Point(229, 64);
+            this.btn_save_file.Name = "btn_save_file";
+            this.btn_save_file.Size = new System.Drawing.Size(78, 23);
+            this.btn_save_file.TabIndex = 18;
+            this.btn_save_file.Text = "Save As";
+            this.btn_save_file.UseVisualStyleBackColor = true;
             // 
             // btn_set_target_file
             // 
@@ -336,24 +327,68 @@
             this.btn_set_target_file.UseVisualStyleBackColor = true;
             this.btn_set_target_file.Click += new System.EventHandler(this.btn_set_target_file_Click);
             // 
+            // btn_set_source_file
+            // 
+            this.btn_set_source_file.Location = new System.Drawing.Point(202, 111);
+            this.btn_set_source_file.Name = "btn_set_source_file";
+            this.btn_set_source_file.Size = new System.Drawing.Size(105, 23);
+            this.btn_set_source_file.TabIndex = 16;
+            this.btn_set_source_file.Text = "Set As Source File";
+            this.btn_set_source_file.UseVisualStyleBackColor = true;
+            this.btn_set_source_file.Click += new System.EventHandler(this.btn_set_source_file_Click);
+            // 
+            // btn_file_create_copy
+            // 
+            this.btn_file_create_copy.Location = new System.Drawing.Point(229, 42);
+            this.btn_file_create_copy.Name = "btn_file_create_copy";
+            this.btn_file_create_copy.Size = new System.Drawing.Size(78, 23);
+            this.btn_file_create_copy.TabIndex = 13;
+            this.btn_file_create_copy.Text = "Create Copy";
+            this.btn_file_create_copy.UseVisualStyleBackColor = true;
+            this.btn_file_create_copy.Click += new System.EventHandler(this.btn_file_create_copy_Click);
+            // 
+            // lbl_selected_file_path
+            // 
+            this.lbl_selected_file_path.AutoSize = true;
+            this.lbl_selected_file_path.Location = new System.Drawing.Point(33, 35);
+            this.lbl_selected_file_path.Name = "lbl_selected_file_path";
+            this.lbl_selected_file_path.Size = new System.Drawing.Size(0, 13);
+            this.lbl_selected_file_path.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Path:";
+            // 
+            // tb_file_identifier
+            // 
+            this.tb_file_identifier.Location = new System.Drawing.Point(55, 12);
+            this.tb_file_identifier.Name = "tb_file_identifier";
+            this.tb_file_identifier.Size = new System.Drawing.Size(100, 20);
+            this.tb_file_identifier.TabIndex = 13;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.tb_pass_writevalue_max);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.tb_pass_writevalue_min);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.tb_pass_identifier);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.tb_pass_chunk_size);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.tb_pass_interval);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.tb_pass_end_address);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.btn_randomize_pass);
+            this.groupBox2.Controls.Add(this.btn_create_new_pass);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.tb_pass_start_address);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(115, 14);
             this.groupBox2.Name = "groupBox2";
@@ -362,70 +397,63 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pass";
             // 
-            // button4
+            // tb_pass_writevalue_max
             // 
-            this.button4.Location = new System.Drawing.Point(342, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 23);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Randomize";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tb_pass_writevalue_max.Location = new System.Drawing.Point(250, 78);
+            this.tb_pass_writevalue_max.Name = "tb_pass_writevalue_max";
+            this.tb_pass_writevalue_max.Size = new System.Drawing.Size(26, 20);
+            this.tb_pass_writevalue_max.TabIndex = 27;
+            this.tb_pass_writevalue_max.Text = "255";
             // 
-            // button5
+            // label13
             // 
-            this.button5.Location = new System.Drawing.Point(342, 10);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 23);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Create New";
-            this.button5.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(169, 81);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(82, 13);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "WriteValue Max";
             // 
-            // label6
+            // tb_pass_writevalue_min
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(201, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
-            this.label6.TabIndex = 15;
+            this.tb_pass_writevalue_min.Location = new System.Drawing.Point(250, 57);
+            this.tb_pass_writevalue_min.Name = "tb_pass_writevalue_min";
+            this.tb_pass_writevalue_min.Size = new System.Drawing.Size(26, 20);
+            this.tb_pass_writevalue_min.TabIndex = 25;
+            this.tb_pass_writevalue_min.Text = "0";
             // 
-            // textBox1
+            // label14
             // 
-            this.textBox1.Location = new System.Drawing.Point(250, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 20);
-            this.textBox1.TabIndex = 13;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(169, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(79, 13);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "WriteValue Min";
             // 
-            // label9
+            // tb_pass_identifier
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(181, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Start Address";
+            this.tb_pass_identifier.Location = new System.Drawing.Point(61, 23);
+            this.tb_pass_identifier.Name = "tb_pass_identifier";
+            this.tb_pass_identifier.Size = new System.Drawing.Size(100, 20);
+            this.tb_pass_identifier.TabIndex = 23;
             // 
-            // textBox2
+            // label12
             // 
-            this.textBox2.Location = new System.Drawing.Point(250, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(68, 20);
-            this.textBox2.TabIndex = 19;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(9, 26);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Identifier";
             // 
-            // label11
+            // tb_pass_chunk_size
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(181, 36);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "End Address";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(61, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(68, 20);
-            this.textBox3.TabIndex = 23;
+            this.tb_pass_chunk_size.Location = new System.Drawing.Point(61, 81);
+            this.tb_pass_chunk_size.Name = "tb_pass_chunk_size";
+            this.tb_pass_chunk_size.Size = new System.Drawing.Size(68, 20);
+            this.tb_pass_chunk_size.TabIndex = 23;
+            this.tb_pass_chunk_size.Text = "100";
             // 
             // label7
             // 
@@ -436,12 +464,13 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Chunk Size";
             // 
-            // textBox4
+            // tb_pass_interval
             // 
-            this.textBox4.Location = new System.Drawing.Point(61, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(68, 20);
-            this.textBox4.TabIndex = 21;
+            this.tb_pass_interval.Location = new System.Drawing.Point(61, 60);
+            this.tb_pass_interval.Name = "tb_pass_interval";
+            this.tb_pass_interval.Size = new System.Drawing.Size(68, 20);
+            this.tb_pass_interval.TabIndex = 21;
+            this.tb_pass_interval.Text = "1000";
             // 
             // label8
             // 
@@ -452,48 +481,75 @@
             this.label8.TabIndex = 20;
             this.label8.Text = "Interval";
             // 
-            // listBox1
+            // tb_pass_end_address
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 30);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(103, 121);
-            this.listBox1.TabIndex = 19;
+            this.tb_pass_end_address.Location = new System.Drawing.Point(250, 32);
+            this.tb_pass_end_address.Name = "tb_pass_end_address";
+            this.tb_pass_end_address.Size = new System.Drawing.Size(68, 20);
+            this.tb_pass_end_address.TabIndex = 19;
+            this.tb_pass_end_address.Text = "0";
             // 
-            // btn_save_file
+            // label11
             // 
-            this.btn_save_file.Location = new System.Drawing.Point(229, 64);
-            this.btn_save_file.Name = "btn_save_file";
-            this.btn_save_file.Size = new System.Drawing.Size(78, 23);
-            this.btn_save_file.TabIndex = 18;
-            this.btn_save_file.Text = "Save As";
-            this.btn_save_file.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(181, 36);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "End Address";
             // 
-            // label10
+            // btn_randomize_pass
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 82);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Hash:";
+            this.btn_randomize_pass.Location = new System.Drawing.Point(342, 32);
+            this.btn_randomize_pass.Name = "btn_randomize_pass";
+            this.btn_randomize_pass.Size = new System.Drawing.Size(105, 23);
+            this.btn_randomize_pass.TabIndex = 16;
+            this.btn_randomize_pass.Text = "Randomize";
+            this.btn_randomize_pass.UseVisualStyleBackColor = true;
             // 
-            // lbl_hash
+            // btn_create_new_pass
             // 
-            this.lbl_hash.AutoSize = true;
-            this.lbl_hash.Location = new System.Drawing.Point(33, 82);
-            this.lbl_hash.Name = "lbl_hash";
-            this.lbl_hash.Size = new System.Drawing.Size(0, 13);
-            this.lbl_hash.TabIndex = 20;
+            this.btn_create_new_pass.Location = new System.Drawing.Point(342, 10);
+            this.btn_create_new_pass.Name = "btn_create_new_pass";
+            this.btn_create_new_pass.Size = new System.Drawing.Size(105, 23);
+            this.btn_create_new_pass.TabIndex = 13;
+            this.btn_create_new_pass.Text = "Create New";
+            this.btn_create_new_pass.UseVisualStyleBackColor = true;
+            this.btn_create_new_pass.Click += new System.EventHandler(this.btn_create_new_pass_Click);
             // 
-            // btn_delete
+            // label6
             // 
-            this.btn_delete.Location = new System.Drawing.Point(229, 86);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(78, 23);
-            this.btn_delete.TabIndex = 21;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(201, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 15;
+            // 
+            // tb_pass_start_address
+            // 
+            this.tb_pass_start_address.Location = new System.Drawing.Point(250, 10);
+            this.tb_pass_start_address.Name = "tb_pass_start_address";
+            this.tb_pass_start_address.Size = new System.Drawing.Size(68, 20);
+            this.tb_pass_start_address.TabIndex = 13;
+            this.tb_pass_start_address.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(181, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Start Address";
+            // 
+            // lb_passes
+            // 
+            this.lb_passes.FormattingEnabled = true;
+            this.lb_passes.Location = new System.Drawing.Point(6, 30);
+            this.lb_passes.Name = "lb_passes";
+            this.lb_passes.Size = new System.Drawing.Size(103, 121);
+            this.lb_passes.TabIndex = 19;
+            this.lb_passes.SelectedIndexChanged += new System.EventHandler(this.lb_passes_SelectedIndexChanged);
             // 
             // btn_save_changes
             // 
@@ -508,8 +564,8 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.btn_write_to_file);
+            this.groupBox3.Controls.Add(this.lb_passes);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Location = new System.Drawing.Point(459, 24);
             this.groupBox3.Name = "groupBox3";
@@ -517,15 +573,6 @@
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Corrupt";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 13);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Files";
             // 
             // label4
             // 
@@ -536,63 +583,24 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Passes";
             // 
-            // button1
+            // btn_write_to_file
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(453, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 34);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Write to File";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_write_to_file.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_write_to_file.Location = new System.Drawing.Point(453, 123);
+            this.btn_write_to_file.Name = "btn_write_to_file";
+            this.btn_write_to_file.Size = new System.Drawing.Size(120, 34);
+            this.btn_write_to_file.TabIndex = 24;
+            this.btn_write_to_file.Text = "Write to File";
+            this.btn_write_to_file.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // label3
             // 
-            this.textBox5.Location = new System.Drawing.Point(61, 23);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 23;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 26);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Identifier";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(250, 78);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(26, 20);
-            this.textBox6.TabIndex = 27;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(169, 81);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 13);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "WriteValue Max";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(250, 57);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(26, 20);
-            this.textBox7.TabIndex = 25;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(169, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(79, 13);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "WriteValue Min";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(56, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Files";
             // 
             // Form1
             // 
@@ -658,18 +666,18 @@
         private System.Windows.Forms.Button btn_set_target_file;
         private System.Windows.Forms.Button btn_set_source_file;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_pass_chunk_size;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_pass_interval;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_pass_end_address;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_randomize_pass;
+        private System.Windows.Forms.Button btn_create_new_pass;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_pass_start_address;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lb_passes;
         private System.Windows.Forms.Label lbl_hash;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_save_file;
@@ -678,13 +686,13 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tb_pass_writevalue_max;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tb_pass_writevalue_min;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_pass_identifier;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_write_to_file;
     }
 }
 

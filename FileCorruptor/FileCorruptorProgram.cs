@@ -9,12 +9,14 @@ namespace FileCorruptor
     class FileCorruptorProgram
     {
         public FileManager FileManager { get; set; }
+        public Corruptor Corruptor { get; set; }
         public string CurrentSourceFileIdentifier { get; set; }
-        //corruptor
+        
 
         public FileCorruptorProgram()
         {
             FileManager = new FileManager();
+            Corruptor = new Corruptor();
         }
 
         public void LoadExternalFile(string filePath)

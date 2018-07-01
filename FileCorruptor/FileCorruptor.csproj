@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Corruptor.cs" />
+    <Compile Include="CorruptorPass.cs" />
     <Compile Include="FileCorruptorProgram.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="FileUtilities.cs" />
